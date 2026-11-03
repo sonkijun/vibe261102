@@ -1,0 +1,68 @@
+[
+  {
+    "id": "snake-ai",
+    "title": "Snake: 사람 vs AI",
+    "category": "python",
+    "emoji": "🐍",
+    "summary": "터미널에서 AI 뱀과 대결하는 뱀 게임",
+    "description": "표준 라이브러리 curses만으로 만든 터미널 게임입니다. 플레이어와 AI 뱀이 같은 맵에서 먹이를 두고 경쟁하며, AI는 먹이까지의 경로를 탐색해 움직입니다. 별도 설치 없이 python3 한 줄로 실행됩니다.",
+    "role": "기획 · 게임 로직 · AI 경로 탐색",
+    "stack": ["Python", "curses", "경로 탐색"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  },
+  {
+    "id": "shooting",
+    "title": "종스크롤 슈팅 게임",
+    "category": "python",
+    "emoji": "✈️",
+    "summary": "공중은 기관포, 지상은 폭탄 — 2단 공격 슈팅",
+    "description": "pygame으로 만든 종스크롤 슈팅 게임입니다. 공중의 적은 기관포로, 지상 목표물은 폭탄으로 공격하는 2단 공격 방식을 구현했고 스프라이트 관리, 충돌 판정, 스테이지 진행을 다룹니다.",
+    "role": "기획 · 전체 구현",
+    "stack": ["Python", "pygame", "게임 루프", "충돌 판정"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  },
+  {
+    "id": "block-breaker",
+    "title": "Block Breaker",
+    "category": "python",
+    "emoji": "🧱",
+    "summary": "tkinter 기반 벽돌깨기 데스크톱 게임",
+    "description": "Python 기본 GUI 툴킷 tkinter의 Canvas로 구현한 벽돌깨기 게임입니다. 패들·공 물리, 벽돌 충돌, 점수와 생명 관리를 클래스 단위로 설계했습니다.",
+    "role": "전체 구현",
+    "stack": ["Python", "tkinter", "OOP"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  },
+  {
+    "id": "tetris",
+    "title": "HTML5 테트리스",
+    "category": "web",
+    "emoji": "🟪",
+    "summary": "단일 HTML 파일로 동작하는 브라우저 테트리스",
+    "description": "HTML5 Canvas와 순수 JavaScript로 만든 테트리스입니다. 블록 회전, 줄 삭제, 점수·레벨 시스템을 구현했으며 외부 라이브러리 없이 HTML 파일 하나로 실행됩니다.",
+    "role": "전체 구현",
+    "stack": ["HTML5 Canvas", "JavaScript", "CSS3"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  },
+  {
+    "id": "todolist",
+    "title": "오늘의 할일",
+    "category": "web",
+    "emoji": "✅",
+    "summary": "오늘 할 일에만 집중하는 가벼운 투두 웹앱",
+    "description": "프로젝트·태그 없이 '오늘 할 일'만 빠르게 적고 체크하는 웹페이지입니다. 진행률 표시, LocalStorage 저장으로 새로고침 후에도 데이터가 유지되며 로그인 없이 바로 쓸 수 있습니다. PRD 작성부터 구현까지 진행했습니다.",
+    "role": "PRD 작성 · UI 설계 · 구현",
+    "stack": ["HTML5", "CSS3", "JavaScript", "LocalStorage"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  },
+  {
+    "id": "ios-sample",
+    "title": "iOS 앱 (준비 중)",
+    "category": "ios",
+    "emoji": "📱",
+    "summary": "SwiftUI 기반 iOS 앱 — 곧 공개 예정",
+    "description": "대표 iOS 프로젝트가 이 자리에 들어갑니다. data/projects.json에서 제목, 설명, 스크린샷, App Store 링크를 채워 주세요.",
+    "role": "기획 · 설계 · 구현",
+    "stack": ["Swift", "SwiftUI"],
+    "links": { "demo": "", "github": "", "appstore": "" }
+  }
+]

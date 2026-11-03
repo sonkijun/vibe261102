@@ -1,0 +1,26 @@
+[
+  {
+    "id": "python",
+    "title": "Python",
+    "icon": "🐍",
+    "summary": "로직·자동화·게임까지, 아이디어를 가장 빨리 동작시키는 언어",
+    "level": 90,
+    "tags": ["Python 3", "pygame", "tkinter", "curses", "FastAPI", "자동화 스크립트", "데이터 처리"]
+  },
+  {
+    "id": "web",
+    "title": "HTML5 / Web",
+    "icon": "🌐",
+    "summary": "설치 없이 브라우저에서 바로 실행되는 반응형·인터랙티브 UI",
+    "level": 85,
+    "tags": ["HTML5", "CSS3", "JavaScript (ES6+)", "Canvas", "LocalStorage", "반응형", "웹 접근성"]
+  },
+  {
+    "id": "ios",
+    "title": "iOS 앱 개발",
+    "icon": "📱",
+    "summary": "Swift와 SwiftUI로 설계부터 App Store 배포까지",
+    "level": 80,
+    "tags": ["Swift", "SwiftUI", "UIKit", "Xcode", "Core Data", "App Store Connect"]
+  }
+]

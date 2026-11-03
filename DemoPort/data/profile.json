@@ -1,0 +1,18 @@
+{
+  "name": "Cesare",
+  "role": "Python · Web · iOS Developer",
+  "tagline": "아이디어를 동작하는 코드로 — 백엔드 스크립트부터 브라우저, iPhone 화면까지.",
+  "about": [
+    "Python으로 로직과 자동화를 만들고, HTML5로 누구나 브라우저에서 바로 써볼 수 있는 화면을 만들고, Swift로 손안에서 동작하는 iOS 앱을 만듭니다.",
+    "작게 만들어 빠르게 돌려보고, 직접 써보며 다듬는 방식을 좋아합니다. 이 사이트의 프로젝트들도 모두 실제로 실행해 볼 수 있는 결과물입니다."
+  ],
+  "email": "cesareborza@gmail.com",
+  "links": {
+    "github": "",
+    "linkedin": ""
+  },
+  "experience": [
+    { "period": "2026 — 현재", "title": "개인 프로젝트 · 포트폴리오", "desc": "Python 게임, HTML5 웹 앱, iOS 앱을 직접 기획하고 구현" },
+    { "period": "추가 예정", "title": "경력 / 교육", "desc": "data/profile.json의 experience 항목을 수정해 채워 주세요." }
+  ]
+}

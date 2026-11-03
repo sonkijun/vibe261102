@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DemoPort — Python · Web · iOS Developer</title>
+  <meta name="description" content="Python, HTML5, iOS 앱 개발을 주력으로 하는 개발자의 포트폴리오.">
+  <meta property="og:title" content="DemoPort — Developer Portfolio">
+  <meta property="og:description" content="Python · HTML5 · iOS 개발 프로젝트와 데모 모음">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // 첫 페인트 전에 테마를 적용해 깜빡임 방지
+    try {
+      const t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="주 메뉴">
+      <a href="#top" class="logo"><span class="logo-mark">&lt;/&gt;</span> DemoPort</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="다크/라이트 모드 전환">
+            <span class="icon-sun" aria-hidden="true">☀️</span><span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero container">
+      <p class="hero-kicker mono">Hello, world! 👋 I'm</p>
+      <h1 class="hero-name" data-bind="name">Developer</h1>
+      <p class="hero-role" data-bind="role"></p>
+      <p class="hero-tagline" data-bind="tagline"></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-ghost">연락하기</a>
+      </div>
+      <div class="hero-code mono" aria-hidden="true">
+        <span class="c-key">const</span> focus = [<span class="c-str">'Python'</span>, <span class="c-str">'HTML5'</span>, <span class="c-str">'iOS'</span>];
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container reveal">
+      <h2 class="section-title"><span class="mono">01.</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text" data-bind="about"></div>
+        <div class="about-avatar" aria-hidden="true">
+          <div class="avatar-ring"><span data-bind="initial">D</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title"><span class="mono">02.</span> Skills</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title"><span class="mono">03.</span> Projects</h2>
+      <div class="filters" role="tablist" aria-label="프로젝트 분야 필터">
+        <button class="filter is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="python">Python</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="web">Web</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="ios">iOS</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section container reveal">
+      <h2 class="section-title"><span class="mono">04.</span> Experience</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact reveal">
+      <h2 class="section-title"><span class="mono">05.</span> Contact</h2>
+      <p class="contact-lead">새로운 프로젝트, 협업, 채용 제안 모두 환영합니다.<br>편하게 메일 주세요.</p>
+      <div class="contact-box">
+        <a class="contact-email mono" id="contact-email" href="#">email</a>
+        <button class="btn btn-ghost btn-sm" id="copy-email">복사</button>
+      </div>
+      <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      <div class="social" id="social"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-bind="name"></span> · Built with HTML5, CSS3 &amp; Vanilla JS</p>
+    </div>
+  </footer>
+
+  <!-- Project detail modal -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal-close" aria-label="닫기">✕</button>
+    <div class="modal-body" id="modal-body"></div>
+  </dialog>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
