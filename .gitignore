@@ -14,3 +14,6 @@ cred.txt
 # 크롤러가 저장한 데이터
 kospi200_*.csv
 kospi200_*.xlsx
+
+# 분석 스크립트 출력물
+birth_output/
